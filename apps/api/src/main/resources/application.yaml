@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: shopsphere-api
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/shopsphere
+    username: postgres
+    password: 6872
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+    properties:
+      hibernate:
+        format_sql: true
+
+  flyway:
+    enabled: true
+
+server:
+  port: 8080
